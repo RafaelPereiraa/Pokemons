@@ -1,0 +1,138 @@
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/fundo-site.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+html > * {
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header{
+    margin-top: -150px;
+    padding: 30px 0px 30px;
+    color: white;
+}
+
+#pokeball-img-title {
+    width: 25px;
+    filter: drop-shadow(0px 0px 5px red) brightness(90%);
+}
+
+main {
+    align-self: center;
+    display: flex;
+}
+
+button {
+    all: unset;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(233, 241, 245);
+    align-self: center;
+    border-radius: 50%;
+    background-image: url(../img/seta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 10px 0 10px;
+    transition: filter 0.1s;
+}
+
+button:hover {
+    transition: filter 0.5s;
+    filter: brightness(110%)
+}
+
+#left-button {
+    transform: rotate(180deg);
+}
+
+.card {
+    width: 330px;
+    height: 550px;
+    padding: 20px;
+    background-image: url(../img/fundo-card-1.jpg);
+    
+    border: 1px solid #fffb00f1;
+    border-radius: 15px ;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 1px 10px #fffb00ab;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: white;
+    font-weight: bold;
+}
+
+.card-header {
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgba(175, 175, 175, 0.747);
+ 
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.card-header > *{
+    margin: 0px;
+}
+
+.card-img {
+    height: 280px;
+}
+
+.card-description {
+    height: 188px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-description > h3{
+    margin: 0px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #323232;
+}
+
+.card-description > div{
+    height: 154px;
+    padding: 10px 14px 0px 14px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #dadad8a1;
+    color: #323232;
+    text-align: justify;
+
+    
+}
+
