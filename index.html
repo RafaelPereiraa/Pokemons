@@ -20,10 +20,10 @@
         <h1> <img id="pokeball-img-title" src="src/img/pokebola.png" alt="pokeball"> MapaDev Week</h1>
     </header>
     <main>
-        <button id="left-button"></button>
-        <div class="card">
-            <div class="card-header">
-                <h2>Pikachu</h2>
+        <button id="left-button" onclick="flipCard('-')"></button>
+        <div id="card">
+            <!-- <div class="card-header">
+                <h2 id="card-title"> fonfon </h2>
                 <p>HP 300</p>
             </div>
             <div class="card-img">
@@ -34,11 +34,11 @@
                 <div>Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo
                     redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem um formato de um raio, mas se o
                     Pikachu for fêmea sua cauda ganha um coração na ponta.</div>
-            </div>
+            </div> -->
         </div>
-        <button id="right-button"></button>
+        <button id="right-button" onclick="flipCard('+')"></button>
         <script src="src/js/pokeapi.js"></script>
-        <script src="src/js/index.js"></script>
+        <script src="src/js/cardModel.js"></script>
 
     </main>
 </body>

@@ -41,6 +41,7 @@ header{
 main {
     align-self: center;
     display: flex;
+    height: 550px;
 }
 
 button {
@@ -66,9 +67,8 @@ button:hover {
     transform: rotate(180deg);
 }
 
-.card {
+#card {
     width: 330px;
-    height: 550px;
     padding: 20px;
     background-image: url(../img/fundo-card-1.jpg);
     
@@ -93,7 +93,6 @@ button:hover {
     box-sizing: border-box;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     
@@ -103,8 +102,14 @@ button:hover {
 
 }
 
-.card-header > *{
-    margin: 0px;
+.card-title {
+    font-size: 22px;
+}
+
+.card-hp {
+    background-color:  #323232f5 ;
+    border-radius: 20px;
+    padding: 6px 10px;
 }
 
 .card-img {
@@ -114,25 +119,24 @@ button:hover {
 .card-description {
     height: 188px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .card-description > h3{
     margin: 0px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px 10px 0px 0px;
     background-color: #323232;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 .card-description > div{
-    height: 154px;
     padding: 10px 14px 0px 14px;
-    box-sizing: border-box;
     overflow-y: auto;
     background-color: #dadad8a1;
     color: #323232;
     text-align: justify;
-
-    
+    height: 130px;
+    font-size: 14px
 }
 
