@@ -1,5 +1,7 @@
 * {
     font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -13,10 +15,10 @@ html {
     background-repeat: no-repeat;
 }
 
-html > * {
+html>* {
     height: 100%;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
 body {
@@ -27,8 +29,8 @@ body {
 
 }
 
-header{
-    margin-top: -150px;
+header {
+    margin-top: -100px;
     padding: 30px 0px 30px;
     color: white;
 }
@@ -58,24 +60,53 @@ button {
     transition: filter 0.1s;
 }
 
+
 button:hover {
     transition: filter 0.5s;
     filter: brightness(110%)
 }
 
+#flip-button {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(233, 241, 245);
+    align-self: center;
+    border-radius: 50%;
+    background-image: url(../img/share-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    filter: blur(0.5px);
+    margin-top: 10px;
+    transition: filter 0.1s;
+    transform: rotate(-90deg)
+}
+
+#flip-button:hover {
+    transition: filter 0.5s;
+    background-color: rgb(134, 134, 134);
+}
+
+
+
 #left-button {
+    visibility: hidden;
     transform: rotate(180deg);
 }
 
 #card {
     width: 330px;
     padding: 20px;
-    background-image: url(../img/fundo-card-1.jpg);
-    
+
+    background-image: url(../img/Cardback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     border: 1px solid #fffb00f1;
-    border-radius: 15px ;
+    box-shadow: inset 0px 0px 1px 10px #fffb002d;
+    border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: inset 0px 0px 1px 10px #fffb00ab;
 
     display: flex;
     flex-direction: column;
@@ -84,6 +115,19 @@ button:hover {
 
     color: white;
     font-weight: bold;
+
+    transition: transform 1s linear;
+    transform: rotateY(180deg);
+}
+
+.card-backface {
+    border: 1px solid #003df5 !important;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 1px 10px #03227C !important;;
+}
+
+.card-backface > * {
+    visibility: hidden;
 }
 
 .card-header {
@@ -95,9 +139,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     background-color: rgba(175, 175, 175, 0.747);
- 
+
     border-radius: 15px 15px 0px 0px;
 
 }
@@ -107,7 +151,7 @@ button:hover {
 }
 
 .card-hp {
-    background-color:  #323232f5 ;
+    background-color: #323232f5;
     border-radius: 20px;
     padding: 6px 10px;
 }
@@ -121,16 +165,22 @@ button:hover {
     width: 100%;
 }
 
-.card-description > h3{
+.card-description-header {
     margin: 0px;
     padding: 15px;
     border-radius: 10px 10px 0px 0px;
     background-color: #323232;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
 }
 
-.card-description > div{
+.card-description-text {
     padding: 10px 14px 0px 14px;
     overflow-y: auto;
     background-color: #dadad8a1;
@@ -140,3 +190,8 @@ button:hover {
     font-size: 14px
 }
 
+.bulbapedia-link {
+    height: 1em;
+    width: 1em;
+    filter: drop-shadow(0px 0px 5px rgb(0, 255, 21)) brightness(120%) contrast(120%);
+}
